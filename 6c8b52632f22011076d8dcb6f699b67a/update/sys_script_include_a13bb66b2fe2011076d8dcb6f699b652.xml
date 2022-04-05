@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_314998_cbuildext.CatalogBuilderUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CatalogBuilderUtils</name>
+        <script><![CDATA[var CatalogBuilderUtils = Class.create();
+CatalogBuilderUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	/**
+	 * This method retrieves values from Catalog Builder Proxy 
+	 * @param {String} sys_id | Catalog item sys_id or catalog item name by parameter 
+	 * @returns JSON obj
+	 */
+	retrieveValues: function (sys_id) {
+		var obj = {};
+		var id = sys_id == undefined ? this.getParameter('sysparm_id') : sys_id;
+		var mapp_field = id;
+		var gr = new GlideRecord('x_314998_cbuildext_catbuilder_proxy');
+		gr.addQuery('item_name', mapp_field);
+		gr.query();
+		if (gr.next()) {
+			obj.group = gr.assignment_group.toString();
+			obj.impact = gr.impact.toString();
+			obj.ciname = gr.external_ci_name.toString();
+			obj.ticket_type = gr.ticket_type.toString();
+			obj.external_id = gr.external_ci_id.toString();
+			obj.title = gr.item_name.name.toString();
+		}
+		return JSON.stringify(obj);
+	},
+
+	/**
+	 * This method retrieves the services created from Catalog Builder and inserted on Catalog Builder Proxy
+	 * @returns JSON obj
+	 */
+	getServiceList: function () {
+		var arr = [];
+		var gr = new GlideRecord('x_314998_cbuildext_catbuilder_proxy');
+		gr.query();
+		while (gr.next()) {
+			arr.push(gr.item_name.name.toString());
+		}
+		var obj = {};
+		obj.values = arr;
+		return JSON.stringify(obj);
+	},
+
+	/**
+	 * This method returns the values in th Catalog Builder Proxy table for the chosen service, 
+	 * is used to prepopulate record values in record producer Update Proxy Values
+	 * @returns Array
+	 */
+	returnProxyRecord: function () {
+		var name = this.getParameter('sysparm_id');
+		var id = this.getCatItemID(name);
+		var gr = new GlideRecord('x_314998_cbuildext_catbuilder_proxy');
+		gr.get('item_name', id);
+		var obj = this.retrieveValues(gr.item_name.sys_id);
+		return obj;
+	},
+
+	/**
+	 * This method check if the chosen Catalog Item have the variable set (Ticket Template) and returns true or false as an answer
+	 * @param {Glide Object} current 
+	 * @returns Boolean
+	 */
+	templateItemCheck: function (current) {
+		var variable_set = 0; //TODO Create property with the sys_id of the base variable set
+		var gr = new GlideRecord('io_set_item');
+		gr.addEncodedQuery('sc_cat_item=' + current.sys_id + '^variable_set=' + variable_set);
+		gr.query();
+		if (gr.next()) {
+			return true;
+		}
+		return false;
+	},
+
+	/**
+	 * This method returns the catalog item name
+	 * @param {String} id | Catalog Item sys_id
+	 * @returns String
+	 */
+	getCatItem: function (id) {
+		var gr = new GlideRecord('sc_cat_item');
+		gr.get(id);
+		return gr.name;
+	},
+
+	/**
+	 * This method returns the id of the item
+	 * If the name is translated, it will search for item id 
+	 * in the sys_translated_text table.
+	 * @param {String} name | Item name
+	 * @returns String
+	 */
+	getCatItemID: function (name) {
+		var grTranslated = new GlideRecord('sys_translated_text');
+		grTranslated.get('value', name);
+		if (grTranslated.documentkey == undefined) {
+			var gr = new GlideRecord('sc_cat_item');
+			gr.get('name', name);
+			return gr.sys_id;
+		}
+		return grTranslated.documentkey;
+	},
+
+	/**
+	 * Method to retrieve the asset name
+	 * @param {String} id | Asset ID 
+	 * @returns String
+	 */
+	_getAssetName: function (id) {
+		var text = [];
+		var record = new GlideRecord('alm_hardware');
+		record.addEncodedQuery('sys_idIN' + id);
+		record.query();
+		while (record.next()) {
+			text.push(record.display_name.toString());
+		}
+		return text;
+	},
+
+    type: 'CatalogBuilderUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-05 13:16:02</sys_created_on>
+        <sys_id>a13bb66b2fe2011076d8dcb6f699b652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CatalogBuilderUtils</sys_name>
+        <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
+        <sys_update_name>sys_script_include_a13bb66b2fe2011076d8dcb6f699b652</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-05 13:16:02</sys_updated_on>
+    </sys_script_include>
+</record_update>
