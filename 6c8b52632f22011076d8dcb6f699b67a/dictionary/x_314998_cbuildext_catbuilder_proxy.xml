@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Catalog Builder Proxy" max_length="40" name="x_314998_cbuildext_catbuilder_proxy" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Assignment group" max_length="60" name="assignment_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Impact" max_length="40" name="impact" type="choice">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Item name" max_length="32" name="item_name" reference="sc_cat_item" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="item_name"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
