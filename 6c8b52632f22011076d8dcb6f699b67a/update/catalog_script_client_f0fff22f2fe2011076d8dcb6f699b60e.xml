@@ -32,12 +32,9 @@
 			result = JSON.parse(answer);
 			g_form.setValue('assignment_group',result.group); 
 			g_form.setValue('impact',result.impact);
-			g_form.setValue('external_ci_name', result.ciname);
-			g_form.setValue('ticket_type', result.ticket_type);
-			g_form.setValue('external_ci_id', result.external_id);
+			g_form.setValue('assigned_to', result.user);
 		});
 	}
-   
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -45,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f0fff22f2fe2011076d8dcb6f699b60e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Retrieve Values</sys_name>
         <sys_overrides/>
         <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
@@ -53,7 +50,7 @@
         <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
         <sys_update_name>catalog_script_client_f0fff22f2fe2011076d8dcb6f699b60e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-05 13:18:22</sys_updated_on>
+        <sys_updated_on>2022-04-06 10:45:27</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
