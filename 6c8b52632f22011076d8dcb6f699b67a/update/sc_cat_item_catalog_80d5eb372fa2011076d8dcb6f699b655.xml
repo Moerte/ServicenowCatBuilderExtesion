@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Update proxy values">2db6f2672fe2011076d8dcb6f699b60d</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 10:41:20</sys_created_on>
+        <sys_id>80d5eb372fa2011076d8dcb6f699b655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Update proxy values</sys_name>
+        <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_80d5eb372fa2011076d8dcb6f699b655</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 10:41:20</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>
