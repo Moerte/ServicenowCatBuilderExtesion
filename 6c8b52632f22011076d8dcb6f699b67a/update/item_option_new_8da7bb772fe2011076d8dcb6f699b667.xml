@@ -2,14 +2,14 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Update proxy values">2db6f2672fe2011076d8dcb6f699b60d</cat_item>
+        <cat_item display_value="Dummy Service">6346bfb32fe2011076d8dcb6f699b61d</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field>impact</choice_field>
-        <choice_table>x_314998_cbuildext_catbuilder_proxy</choice_table>
+        <choice_field/>
+        <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value>4</default_value>
+        <default_value/>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>impact</field>
+        <field>short_description</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -30,31 +30,31 @@
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table>x_314998_cbuildext_catbuilder_proxy</lookup_table>
+        <lookup_table/>
         <lookup_unique>false</lookup_unique>
-        <lookup_value>impact</lookup_value>
+        <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>impact</name>
-        <order>400</order>
+        <name>short_description</name>
+        <order>200</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Impact</question_text>
+        <question_text>Short Description</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_314998_cbuildext_catbuilder_proxy</record_producer_table>
+        <record_producer_table>x_314998_cbuildext_dummy_tickets</record_producer_table>
         <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>undefined</reference_qual>
+        <reference_qual_condition>undefined</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script/>
@@ -66,23 +66,23 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-04-06 08:28:27</sys_created_on>
-        <sys_id>c5474b3f2f22011076d8dcb6f699b66c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Impact</sys_name>
+        <sys_created_on>2022-04-06 11:59:35</sys_created_on>
+        <sys_id>8da7bb772fe2011076d8dcb6f699b667</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Short Description</sys_name>
         <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
-        <sys_update_name>item_option_new_c5474b3f2f22011076d8dcb6f699b66c</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-06 11:47:16</sys_updated_on>
+        <sys_update_name>item_option_new_8da7bb772fe2011076d8dcb6f699b667</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-06 12:00:09</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>5</type>
+        <type>6</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -94,22 +94,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c5474b3f2f22011076d8dcb6f699b66c"/>
-    <fx_price action="delete_multiple" query="id=c5474b3f2f22011076d8dcb6f699b66c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8da7bb772fe2011076d8dcb6f699b667"/>
+    <fx_price action="delete_multiple" query="id=8da7bb772fe2011076d8dcb6f699b667"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>price_if_checked</field>
-        <id>c5474b3f2f22011076d8dcb6f699b66c</id>
+        <id>8da7bb772fe2011076d8dcb6f699b667</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-04-06 08:28:27</sys_created_on>
-        <sys_id>a567c7fb2f22011076d8dcb6f699b64b</sys_id>
+        <sys_created_on>2022-04-06 11:59:35</sys_created_on>
+        <sys_id>26b7fb772fe2011076d8dcb6f699b69f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-06 08:28:27</sys_updated_on>
+        <sys_updated_on>2022-04-06 11:59:35</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -117,16 +117,16 @@
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>rec_price_if_checked</field>
-        <id>c5474b3f2f22011076d8dcb6f699b66c</id>
+        <id>8da7bb772fe2011076d8dcb6f699b667</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-04-06 08:28:27</sys_created_on>
-        <sys_id>6967c7fb2f22011076d8dcb6f699b64a</sys_id>
+        <sys_created_on>2022-04-06 11:59:35</sys_created_on>
+        <sys_id>e6b7fb772fe2011076d8dcb6f699b69e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-06 08:28:27</sys_updated_on>
+        <sys_updated_on>2022-04-06 11:59:35</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

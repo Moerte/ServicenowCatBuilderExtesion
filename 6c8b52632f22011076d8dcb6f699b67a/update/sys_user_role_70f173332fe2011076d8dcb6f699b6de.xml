@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_314998_cbuildext.dummy_tickets_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>dummy_tickets_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 11:34:22</sys_created_on>
+        <sys_id>70f173332fe2011076d8dcb6f699b6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_314998_cbuildext.dummy_tickets_user</sys_name>
+        <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
+        <sys_update_name>sys_user_role_70f173332fe2011076d8dcb6f699b6de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 11:34:22</sys_updated_on>
+    </sys_user_role>
+</record_update>
