@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Dummy Service">6346bfb32fe2011076d8dcb6f699b61d</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 11:54:13</sys_created_on>
+        <sys_id>e3763b372fe2011076d8dcb6f699b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Dummy Service</sys_name>
+        <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_e3763b372fe2011076d8dcb6f699b61b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 11:54:13</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</application>
+        <file_path/>
+        <instance_id>015ae457db8dba845904f897bf961918</instance_id>
+        <instance_name>dev29449</instance_name>
+        <name>sc_cat_item_catalog_e3763b372fe2011076d8dcb6f699b61b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Dummy Service">6346bfb32fe2011076d8dcb6f699b61d</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-04-06 11:54:13</sys_created_on><sys_id>e3763b372fe2011076d8dcb6f699b61b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Dummy Service</sys_name><sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package><sys_policy/><sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope><sys_update_name>sc_cat_item_catalog_e3763b372fe2011076d8dcb6f699b61b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-04-06 11:54:13</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-461281911</payload_hash>
+        <record_name>Service Catalog.Dummy Service</record_name>
+        <reverted_from/>
+        <source>3e9472e32fe2011076d8dcb6f699b6d0</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 11:54:13</sys_created_on>
+        <sys_id>77763b372fe2011076d8dcb6f699b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ffeb9a3c90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 11:54:13</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>fb763b374de20110cf1577bd8e3e231d</update_guid>
+        <update_guid_history>fb763b374de20110cf1577bd8e3e231d:-461281911</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Dummy Service">8dd77f772fe2011076d8dcb6f699b655</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-04-06 12:00:03</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>27971e1063df4ed4b7290c371304c3f1</sys_id>
+        <sys_metadata>e3763b372fe2011076d8dcb6f699b61b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Dummy Service</sys_name>
+        <sys_package display_value="Catalog Builder Extension" source="x_314998_cbuildext">6c8b52632f22011076d8dcb6f699b67a</sys_package>
+        <sys_parent display_value="Dummy Service">6346bfb32fe2011076d8dcb6f699b61d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Catalog Builder Extension">6c8b52632f22011076d8dcb6f699b67a</sys_scope>
+        <sys_scope_delete display_value="">184c138ca9744420a44a52abdd5e7090</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_e3763b372fe2011076d8dcb6f699b61b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_e3763b372fe2011076d8dcb6f699b61b">77763b372fe2011076d8dcb6f699b61e</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-06 12:00:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
